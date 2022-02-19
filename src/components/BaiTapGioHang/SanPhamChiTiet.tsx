@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { PropsItemDienThoai } from "./LiftingStateUp.types"
-class SanPhamChiTiet extends Component<Pick<PropsItemDienThoai, 'sanPhamChiTiet'>, {}> {
+import { ItemDt } from "./BaiTapGioHang.types"
 
+type PropsSanPhamChiThiet = {
+    sanPhamChiTiet: ItemDt,
+}
+
+class SanPhamChiTiet extends Component<PropsSanPhamChiThiet, {}> {
     render() {
         const { hinhAnh, tenSP, giaBan, heDieuHanh } = this.props.sanPhamChiTiet
         return (

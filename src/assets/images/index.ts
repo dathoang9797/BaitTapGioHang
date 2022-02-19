@@ -18,7 +18,7 @@ import spIphoneX from './sp_iphoneX.png';
 import spNote7 from './sp_note7.png';
 import spvivo850 from './sp_vivo850.png';
 
-const Images = {
+export {
   blackCar,
   redCar,
   silverCar,
@@ -39,9 +39,3 @@ const Images = {
   spNote7,
   spvivo850,
 };
-
-type ImagesIndex = {
-  [key: string]: string;
-} & typeof Images;
-
-export default Images as ImagesIndex;
