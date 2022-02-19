@@ -18,7 +18,6 @@ class DanhSachDienThoai extends Component<PropsDanhSachDienThoai, {}> {
   }
 
   render() {
-
     return (
       <div className='d-flex justify-content-around mt-5'>
         {this.renderDSDT()}
